@@ -1,0 +1,277 @@
+body{
+	background-color: #FFFFFF;
+	min-width: 320px;
+}
+
+h2{
+	font-family: 'Play', sans-serif;
+	font-size: 24pt;
+}
+
+.header-one .city{
+    font-family: arial;
+}
+
+.header-one .metro{
+    color: red;
+    float: left;
+}
+
+.header-one .ref{
+    font-size: 15px;
+}
+
+.header-one .ref-phone{
+    border-bottom-style: dashed;
+    text-decoration: none;
+}
+
+.header-one .ref-phone-red{
+    color: #A51C1C;
+}
+
+.bg-light-two{
+    background: #F8F9FA;
+}
+
+.header-two{
+    border-bottom: 1px solid #D2D2D2;
+    border-radius: 5px;
+}
+
+.navbar-toggler{
+    margin-bottom: 10px;
+}
+
+.selection{
+	border: 1px solid #D2D2D2;
+	border-radius: 5px;
+}
+
+.selection .btn-red-two{
+	background-color: #E10102;
+	color: #FFFFFF;
+	font-family: 'Play', sans-serif;
+	font-size: 13pt;
+	padding: 5px 30px;
+	border-radius: 5px;
+	width: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+
+body {
+    color: #4f4f5a;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+#active-slide {
+    width: 100%;
+    display: table;
+    position: relative;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+#slider{
+    position: relative;
+    width: calc(100% * 12);
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+}
+
+.slide{
+    width: calc(100%/12);
+    list-style: none;
+    display: inline;
+    float: left;
+}
+
+.slide img {
+    width:100%;
+}
+
+.Radio-But{
+    margin-top:10px;
+    text-align:center;
+}
+
+.Radio-But .ctrl-select {
+    margin:2px;
+    display:inline-block;
+    width:16px;
+    height:16px;
+    overflow:hidden;
+    text-indent:-9999px;
+    background:url("../img/radioBg.png") center bottom no-repeat;
+}
+
+.Radio-But .ctrl-select:hover {
+    cursor:pointer;
+    background-position:center center;
+}
+
+.Radio-But .ctrl-select.active {
+    background-position:center top;
+}
+
+#prewbutton, #nextbutton {
+    display:block;
+    width:40px;
+    height:100%;
+    position:absolute;
+    top:0;
+    overflow:hidden;
+    text-indent:-999px;
+    
+    opacity:0.5;
+    z-index:3;
+    outline:none !important;
+}
+
+#prewbutton {
+    left:10px;
+}
+
+#nextbutton {
+    right:10px;
+    background:url() right center no-repeat;
+}
+
+#prewbutton:hover, #nextbutton:hover {
+    opacity:1;
+}
+
+.price{
+	font-family: 'Play', sans-serif;
+	font-size: 16px;
+}
+
+.price span{
+	color: #FFFFFF;
+	background-color: #2693EC;
+	padding: 5px 10px;
+	margin-left: 10px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.special del{
+	font-size: 13px;
+	color: #A1A1A1;
+	font-family: 'Play', sans-serif;
+}
+
+.special .btn-red-two{
+	width: 100%;
+}
+
+.reviews .btn-blue{
+    background-color: #2491E9;
+    color: #FFFFFF;
+    font-family: 'Play', sans-serif;
+    width: 100%;
+}
+
+.reviews .btn-blue:hover{
+    background-color: #0E7FDA;
+}
+
+.reviews .btn-gray{
+    background-color: #E2E5E7;
+    color: #000000;
+    font-family: 'Play', sans-serif;
+    width: 100%;
+}
+
+.reviews .btn-gray:hover{
+    background-color: #CFD3D6;
+}
+
+footer p{
+    font-family: arial;
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 1199px) {
+	.selection .btn-red{
+		margin-left: 0;
+		font-size: 13pt;
+		padding: 5px 10px;
+	}
+
+	.price span{
+		color: #000000;
+		background-color: transparent;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.selection select{
+		background: none;
+	}
+
+	.selection h2{
+		text-align: center;
+	}
+
+    .price span{
+        color: #FFFFFF;
+        background-color: #2693EC;
+    }
+
+    .navbar-nav{
+        text-align: center;
+    }
+
+    .bg-light-two{
+        background: none;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .selection{
+        margin-top: 15px;
+    }
+
+	.selection select{
+		appearance: none;
+		background: url(../img/arrow_custom.svg) no-repeat right;
+		background-position-x: calc(100% - 8px);
+	}
+
+	.selection .btn-red{
+		width: 100%;
+	}
+
+    .price span{
+        color: #000000;
+        background-color: transparent;
+    }
+
+    .header-one .metro{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+	.price span{
+		color: #FFFFFF;
+		background-color: #2693EC;
+	}
+}
